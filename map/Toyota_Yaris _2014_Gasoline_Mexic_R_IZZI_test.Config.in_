@@ -1,0 +1,37 @@
+FIRMA=7FC0A421
+# Engine coolant temperature (°C)
+409B=-40,1,1,-
+# Driver Seat Belt (State)
+4086=0,1,1,-
+# Distance traveled since codes cleared (km)
+40A3=0,1,1,-
+# Real-Ground vehicle speed (cm/sec)
+409F=0,0.36,36,sensor10
+# Accelertion Pedal Position (%)
+4089=0,1,2,-
+# Parking Brake (State)
+408C=0,1,1,-
+# Door Driver (State)
+408D=0,1,1,-
+# Fuel Level (%)
+408E=0,6,5,Fuel_Level
+# Real-Ground vehicle speed (cm/sec)
+40A5=0,1000,36,-
+# Total odometer (km)
+4087=0,1,1,ECU_Odometer
+# Engine speed (rpm)
+4081=0,39,50,Engine_RPM
+# Emergency Light (State)
+408B=0,1,1,-
+# Fuel quntity (ilt)
+40A6=0,1,2,-
+# Fuel rate (lit/hor)
+4082=0,3,1000,-
+# A/C (State)
+408A=0,1,1,-
+# Intake air temperature (°C)
+40A1=-40,1,1,-
+# Brake pedal   (State)
+4085=0,1,1,-
+# Hed Light (State)
+4088=0,1,1,-

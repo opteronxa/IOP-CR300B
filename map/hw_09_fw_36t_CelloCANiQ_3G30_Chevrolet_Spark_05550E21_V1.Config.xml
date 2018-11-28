@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<CanData>
+  <PL_Signature>05550E21</PL_Signature>
+  <CanOperationalMode>0</CanOperationalMode>
+  <CanProtocolLevel>5</CanProtocolLevel>
+  <CanEditorVersion>1.4.6319.26627</CanEditorVersion>
+  <Sentences>
+    <Operator Type="30" Title="Generate event" ID="0" IsEnabled="true" RawDataStr="1E-00-1B-00-07-00-01-04-06-07-19-02-05-80-40-81-40-84-40-82-40-83-40-00-05-03-01-02-03-04" StartAddress="4663" EndAddress="40" ImageName="/CanPlusEditor;component/Images/OperatorsImages/GenerateEvent.png" Position="173,100" SourceID="1E00" SourcesCount="1" DynamicSources="false">
+      <Parameters>
+        <Parameter Description="Message" ParameterType="ptBoolean" Value="True" RawData="01" Offset="8" Length="1" Hint="" InheriteSourceUnits="-1" IsVariableSize="false" />
+        <Parameter Description="Output" ParameterType="ptBoolean" Value="False" RawData="00" Offset="9" Length="1" Hint="" InheriteSourceUnits="-1" IsVariableSize="false" />
+        <Parameter Description="Message descriptor" ParameterType="ptMessageDescriptor" Value="04 06 07 19 02 05 80 40 81 40 84 40 82 40 83 40" RawData="04-06-07-19-02-05-80-40-81-40-84-40-82-40-83-40" Offset="16" Length="128" Hint="" InheriteSourceUnits="-1" IsVariableSize="true" />
+        <Parameter Description="Output descriptor" ParameterType="ptOutputDescriptor" Value="00" RawData="00" Offset="144" Length="8" Hint="" InheriteSourceUnits="-1" IsVariableSize="true" />
+        <Parameter Description="DFD Output descriptor" ParameterType="ptDFDOutputDescriptor" Value="05 03 01 02 03 04" RawData="05-03-01-02-03-04" Offset="152" Length="48" Hint="" InheriteSourceUnits="-1" IsVariableSize="true" />
+      </Parameters>
+      <Sources>
+        <Operator Type="7" Title="Timer" ID="0" IsEnabled="true" RawDataStr="07-00-07-FF-FF-FF-FF-00-70-17" StartAddress="4653" EndAddress="10" ImageName="/CanPlusEditor;component/Images/OperatorsImages/Timer.png" Position="50,100" SourceID="0700" SourcesCount="2" DynamicSources="false">
+          <Parameters>
+            <Parameter Description="Timer mode" ParameterType="ptEnum" Value="Periodic Timer" RawData="00" Offset="0" Length="3" Hint="" InheriteSourceUnits="-1" IsVariableSize="false" Elements="Periodic Timer,True while counting,False while counting,Continuous output" />
+            <Parameter Description="Resolution low" ParameterType="ptEnum" Value="High: 10msec" RawData="00" Offset="3" Length="1" Hint="" InheriteSourceUnits="-1" IsVariableSize="false" Elements="High: 10msec,Low: 1 Sec" />
+            <Parameter Description="Retrigger" ParameterType="ptBoolean" Value="False" RawData="00" Offset="4" Length="1" Hint="" InheriteSourceUnits="-1" IsVariableSize="false" />
+            <Parameter Description="Time" ParameterType="ptInt" Value="6000" RawData="70-17" Offset="8" Length="16" Hint="Timer period According to the resolution " InheriteSourceUnits="-1" IsVariableSize="false" />
+            <Parameter Description="Time" ParameterType="ptCustomTime2" Value="00:01:00" RawData="00-00-00-00" Offset="0" Length="0" Hint="Timer period" InheriteSourceUnits="-1" IsVariableSize="false" Elements="10,1000" />
+          </Parameters>
+          <Sources>
+            <Empty />
+            <Empty />
+          </Sources>
+        </Operator>
+      </Sources>
+    </Operator>
+  </Sentences>
+  <Operators />
+  <Free_Variables>
+    <Variable Title="K-Line #1" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,383" Enabled="true" Filter_Index="-1" VarID="4080" Var_Function="NotAssigned" RawData="16-D9-4A-29-63-1A-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1" FW_Offset="-40" FW_Units="?" Decimal_Places="2" />
+    <Variable Title="K-Line #2" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,661" Enabled="true" Filter_Index="13" VarID="4083" Var_Function="RPM" RawData="16-B9-AA-29-62-1B-50-6D-7D-85-FB" FW_Multiplier="1" FW_Divider="4" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+    <Variable Title="K-Line #3" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,800" Enabled="true" Filter_Index="-1" VarID="4082" Var_Function="15" RawData="16-B9-AA-29-6E-1F-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="4" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+    <Variable Title="K-Line #4" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,522" Enabled="true" Filter_Index="-1" VarID="4081" Var_Function="16" RawData="16-D9-4A-29-6D-1C-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1010" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+    <Variable Title="K-Line #5" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,243" Enabled="true" Filter_Index="-1" VarID="4084" Var_Function="17" RawData="16-D9-4A-29-61-18-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1" FW_Offset="-40" FW_Units="?" Decimal_Places="2" />
+  </Free_Variables>
+  <Variable_Descriptors>
+    <VarDesc ID="0" IsEnabled="true" RawDataStr="FF-7C-80-40-57-BB-06-00-01-00-01-00-D8-FF-6A-11-04-6C-9F-6C-EB-01" StartAddress="4540" EndAddress="22" ImageName="" Position="0,0" Name="VarDesc #1">
+      <Variable Title="K-Line #1" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,383" Enabled="true" Filter_Index="-1" VarID="4080" Var_Function="NotAssigned" RawData="16-D9-4A-29-63-1A-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1" FW_Offset="-40" FW_Units="?" Decimal_Places="2" />
+    </VarDesc>
+    <VarDesc ID="0" IsEnabled="true" RawDataStr="0D-7C-83-40-57-DB-E6-02-01-00-04-00-00-00-6A-10-0D-6C-91-0A-8B-01" StartAddress="4562" EndAddress="44" ImageName="" Position="0,0" Name="VarDesc #2">
+      <Variable Title="K-Line #2" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,661" Enabled="true" Filter_Index="13" VarID="4083" Var_Function="RPM" RawData="16-B9-AA-29-62-1B-50-6D-7D-85-FB" FW_Multiplier="1" FW_Divider="4" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+    </VarDesc>
+    <VarDesc ID="0" IsEnabled="true" RawDataStr="FF-7C-82-40-57-DB-E6-0F-01-00-04-00-00-00-6A-1C-09-6C-9F-6C-EB-01" StartAddress="4584" EndAddress="66" ImageName="" Position="0,0" Name="VarDesc #3">
+      <Variable Title="K-Line #3" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,800" Enabled="true" Filter_Index="-1" VarID="4082" Var_Function="15" RawData="16-B9-AA-29-6E-1F-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="4" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+    </VarDesc>
+    <VarDesc ID="0" IsEnabled="true" RawDataStr="FF-7C-81-40-57-BB-06-10-01-00-F2-03-00-00-6A-1F-02-6C-9F-6C-EB-01" StartAddress="4606" EndAddress="88" ImageName="" Position="0,0" Name="VarDesc #4">
+      <Variable Title="K-Line #4" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,522" Enabled="true" Filter_Index="-1" VarID="4081" Var_Function="16" RawData="16-D9-4A-29-6D-1C-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1010" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+    </VarDesc>
+    <VarDesc ID="0" IsEnabled="true" RawDataStr="FF-7C-84-40-57-BB-06-11-01-00-01-00-D8-FF-6A-13-06-6C-9F-6C-EB-01" StartAddress="4628" EndAddress="110" ImageName="" Position="0,0" Name="VarDesc #5">
+      <Variable Title="K-Line #5" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,243" Enabled="true" Filter_Index="-1" VarID="4084" Var_Function="17" RawData="16-D9-4A-29-61-18-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1" FW_Offset="-40" FW_Units="?" Decimal_Places="2" />
+    </VarDesc>
+  </Variable_Descriptors>
+  <OBD2_Standard />
+  <Containers />
+  <Config>
+    <VehicleLibraryInfo LastUpdate="2017-07-28 20:05:44Z" Revision="5">
+      <LibID>0</LibID>
+      <Vehicle Type="N.A" Brand="N.A" ModelName="N.A" ProductionYear="2017" EngineType="0" />
+      <DestinationRegion></DestinationRegion>
+      <FWVersion>36t</FWVersion>
+      <FilesPath></FilesPath>
+    </VehicleLibraryInfo>
+    <Filters />
+    <J1939 />
+    <OBD2 />
+    <KLine>
+      <Variable Title="K-Line #1" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,383" Enabled="true" Filter_Index="-1" VarID="4080" Var_Function="NotAssigned" RawData="16-D9-4A-29-63-1A-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1" FW_Offset="-40" FW_Units="?" Decimal_Places="2" />
+      <Variable Title="K-Line #2" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,661" Enabled="true" Filter_Index="13" VarID="4083" Var_Function="RPM" RawData="16-B9-AA-29-62-1B-50-6D-7D-85-FB" FW_Multiplier="1" FW_Divider="4" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+      <Variable Title="K-Line #3" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,800" Enabled="true" Filter_Index="-1" VarID="4082" Var_Function="15" RawData="16-B9-AA-29-6E-1F-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="4" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+      <Variable Title="K-Line #4" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,522" Enabled="true" Filter_Index="-1" VarID="4081" Var_Function="16" RawData="16-D9-4A-29-6D-1C-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1010" FW_Offset="0" FW_Units="?" Decimal_Places="2" />
+      <Variable Title="K-Line #5" ID="0" IsEnabled="true" RawDataStr="Download to update" StartAddress="0" EndAddress="0" ImageName="/CanPlusEditor;component/Images/VariablesImages/K-Line.png" Position="50,243" Enabled="true" Filter_Index="-1" VarID="4084" Var_Function="17" RawData="16-D9-4A-29-61-18-50-63-93-E5-FB" FW_Multiplier="1" FW_Divider="1" FW_Offset="-40" FW_Units="?" Decimal_Places="2" />
+    </KLine>
+    <Queries />
+    <KLineQueries>
+      <Query ManufacturingSpecificQueries="false" Active="true" RawData="03-05-A1-A3-D2-51-53-63-CE-B6-4B-FB-21-AB-20-17" Title="K-Line Query #1" ID="0" IsEnabled="true" RawDataStr="03-05-A1-A3-D2-51-53-63-CE-B6-4B-FB-21-AB-20-17" StartAddress="4205" EndAddress="0" ImageName="/CanPlusEditor;component/Images/QueriesImages/QuestionMark.png" Position="0,0" />
+      <Query ManufacturingSpecificQueries="false" Active="true" RawData="03-78-A1-A3-D2-51-53-6C-C0-BF-4B-FB-21-AB-20-17" Title="K-Line Query #2" ID="0" IsEnabled="true" RawDataStr="03-78-A1-A3-D2-51-53-6C-C0-BF-4B-FB-21-AB-20-17" StartAddress="4221" EndAddress="0" ImageName="/CanPlusEditor;component/Images/QueriesImages/QuestionMark.png" Position="0,0" />
+      <Query ManufacturingSpecificQueries="false" Active="true" RawData="03-72-A1-A3-D2-51-53-6F-CE-B2-4B-FB-21-AB-20-17" Title="K-Line Query #3" ID="0" IsEnabled="true" RawDataStr="03-72-A1-A3-D2-51-53-6F-CE-B2-4B-FB-21-AB-20-17" StartAddress="4237" EndAddress="0" ImageName="/CanPlusEditor;component/Images/QueriesImages/QuestionMark.png" Position="0,0" />
+      <Query ManufacturingSpecificQueries="false" Active="true" RawData="03-13-A1-A3-D2-51-53-61-9E-E4-4B-FB-21-AB-20-17" Title="K-Line Query #4" ID="0" IsEnabled="true" RawDataStr="03-13-A1-A3-D2-51-53-61-9E-E4-4B-FB-21-AB-20-17" StartAddress="4253" EndAddress="0" ImageName="/CanPlusEditor;component/Images/QueriesImages/QuestionMark.png" Position="0,0" />
+    </KLineQueries>
+    <CANSettings>
+      <CanOperationalMode>0</CanOperationalMode>
+      <BusRate>0</BusRate>
+      <BusFormat>0</BusFormat>
+      <DTCProcessControl>False</DTCProcessControl>
+      <FlashLampDetection>False</FlashLampDetection>
+      <OBD2MILDetection>False</OBD2MILDetection>
+    </CANSettings>
+  </Config>
+</CanData>
